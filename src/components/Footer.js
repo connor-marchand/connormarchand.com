@@ -4,7 +4,7 @@ import React from 'react'
 const Footer = props => (
   <footer id="footer">
     <section>
-      <h2>Aliquam sed mauris</h2>
+      <h2>Say Hello!</h2>
       <p>
         Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat
         magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras
@@ -20,53 +20,38 @@ const Footer = props => (
       </ul>
     </section>
     <section>
-      <h2>Etiam feugiat</h2>
-      <dl className="alt">
-        <dt>Address</dt>
-        <dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
-        <dt>Phone</dt>
-        <dd>(000) 000-0000 x 0000</dd>
-        <dt>Email</dt>
-        <dd>
-          <a href="https://codebushi.com">information@untitled.tld</a>
-        </dd>
-      </dl>
+      <h2>Contact</h2>
       <ul className="icons">
         <li>
           <a
-            href="https://twitter.com/huntaroSan"
-            className="icon fa-twitter alt"
-          >
-            <span className="label">Twitter</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://codebushi.com" className="icon fa-facebook alt">
-            <span className="label">Facebook</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://codebushi.com" className="icon fa-instagram alt">
-            <span className="label">Instagram</span>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/codebushi/gatsby-starter-stellar"
+            href="https://github.com/connor-marchand"
             className="icon fa-github alt"
+            target="_blank"
           >
             <span className="label">GitHub</span>
           </a>
         </li>
         <li>
-          <a href="https://codebushi.com" className="icon fa-dribbble alt">
-            <span className="label">Dribbble</span>
+          <a
+            href="https://www.linkedin.com/in/connor-marchand-b3a194114/"
+            className="icon fa-linkedin alt"
+            target="_blank"
+          >
+            <span className="label">GitHub</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="mailto:connorlm1997@gmail.com"
+            className="icon fa-envelope alt"
+          >
+            <span className="label">GitHub</span>
           </a>
         </li>
       </ul>
     </section>
     <p className="copyright">
-      &copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.
+      &copy; 2020 Connor Marchand. Design: <a href="https://html5up.net">HTML5 UP</a>. Icons: <a href="https://www.flaticon.com/authors/freepik">Freepik</a>.
     </p>
   </footer>
 )

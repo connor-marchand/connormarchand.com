@@ -2,10 +2,16 @@ import { Link } from 'gatsby'
 import React from 'react'
 import Helmet from 'react-helmet'
 import { Waypoint } from 'react-waypoint'
-import pic01 from '../assets/images/pic01.jpg'
+import me from '../assets/images/me.png'
+import ship from '../assets/images/ship.png'
+import java from '../assets/images/java.png'
+import feather from '../assets/images/feather.png'
+import cloud from '../assets/images/network.png'
 import Header from '../components/Header'
 import Layout from '../components/layout'
 import Nav from '../components/Nav'
+
+const MAX_ITEMS = 1;
 
 class Index extends React.Component {
   constructor(props) {
@@ -14,6 +20,62 @@ class Index extends React.Component {
       stickyNav: false,
     }
   }
+
+  componentWillMount() {
+    this.state = {
+      isOpen: false,
+    };
+
+    this.items = [
+      <div>
+        <ul className="features">
+          <li><span className="image"> <img src={java} alt="java" height="120px"/> </span>
+          <h3>Java</h3>
+          <p>Experienced in java development and using java to build applications</p>
+          </li>
+          <li><span className="image"> <img src={cloud} alt="cloud" height="120px"/> </span>
+          <h3>Cloud Computing</h3>
+          <p>Experienced in cloud computing platforms such as AWS.</p>
+          </li>
+          <li><span className="image"> <img src={ship} alt="ship" height="120px" /></span>
+          <h3>Containers</h3>
+          <p>Proficient with container services such as Docker and building scalable applications.</p>
+          </li>
+        </ul>
+      </div>,
+      <div>
+        <ul className="features">
+          <li><span className="image"> <img src={feather} alt="pom" height="120px"/> </span>
+          <h3>Project Management</h3>
+          <p>Experienced in project management tools such as Apache Maven.</p>
+          </li>
+          <li><span className="image"> <img src={feather} alt="java" height="120px"/> </span>
+          <h3>Git</h3>
+          <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat onsequat tempus veroeros sed consequat.</p>
+          </li>
+          <li><span className="image"> <img src={feather} alt="java" height="120px"/> </span>
+          <h3>--</h3>
+          <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat onsequat tempus veroeros sed consequat.</p>
+          </li>
+        </ul>
+      </div>
+      ];
+    }
+
+  toggle = () => {
+    this.setState({ isOpen: !this.state.isOpen });
+  }
+
+  getRenderedItems() {
+    if (this.state.isOpen) {
+      return this.items;
+    }
+    return this.items.slice(0, MAX_ITEMS);
+  }
+
+
+
+
 
   _handleWaypointEnter = () => {
     this.setState(() => ({ stickyNav: false }))
@@ -26,7 +88,7 @@ class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <Helmet title="Gatsby Starter - Stellar" />
+        <Helmet title="Connor Marchand" />
 
         <Header />
 
@@ -37,17 +99,20 @@ class Index extends React.Component {
         <Nav sticky={this.state.stickyNav} />
 
         <div id="main">
-          <section id="intro" className="main">
+          <section id="about" className="main">
             <div className="spotlight">
               <div className="content">
                 <header className="major">
-                  <h2>Ipsum sed adipiscing</h2>
+                  <h2>About Me</h2>
                 </header>
                 <p>
-                  Sed lorem ipsum dolor sit amet nullam consequat feugiat
-                  consequat magna adipiscing magna etiam amet veroeros. Lorem
-                  ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem
-                  ipsum dolor sit amet aliquam.
+                  Hello! I am Connor, a software engineer based in Kansas City, MO
+                  who loves to solve problems and occasionally create new things.
+                  I am an experienced java developer who, at the moment, helps
+                  create client facing applications.
+
+                  I will graduate from <a href="https://www.rockhurst.edu/" target="_blank"> Rockhurst University</a> in May of 2020.
+
                 </p>
                 <ul className="actions">
                   <li>
@@ -58,41 +123,44 @@ class Index extends React.Component {
                 </ul>
               </div>
               <span className="image">
-                <img src={pic01} alt="" />
+                <img src={me} alt="me" />
               </span>
             </div>
           </section>
 
-          <section id="first" className="main special">
+          <section id="skills" className="main special">
             <header className="major">
-              <h2>Magna veroeros</h2>
+              <h2>Skills</h2>
             </header>
-            <ul className="features">
-              <li>
-                <span className="icon major style1 fa-code"></span>
-                <h3>Ipsum consequat</h3>
-                <p>
-                  Sed lorem amet ipsum dolor et amet nullam consequat a feugiat
-                  consequat tempus veroeros sed consequat.
-                </p>
-              </li>
-              <li>
-                <span className="icon major style3 fa-copy"></span>
-                <h3>Amed sed feugiat</h3>
-                <p>
-                  Sed lorem amet ipsum dolor et amet nullam consequat a feugiat
-                  consequat tempus veroeros sed consequat.
-                </p>
-              </li>
-              <li>
-                <span className="icon major style5 fa-diamond"></span>
-                <h3>Dolor nullam</h3>
-                <p>
-                  Sed lorem amet ipsum dolor et amet nullam consequat a feugiat
-                  consequat tempus veroeros sed consequat.
-                </p>
-              </li>
-            </ul>
+
+
+            <div>
+              {this.getRenderedItems().map((item, id) => (
+                <div key={id}>{item}</div>
+              ))}
+              <Link onClick={this.toggle} className="button">
+                {this.state.isOpen ? 'Show Less' : 'Show More'}
+              </Link>
+            </div>
+          </section>
+
+
+          <section id="experience" className="main special">
+            <header className="major">
+              <h2>Experience</h2>
+            </header>
+            <p className="content">
+              Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl
+              eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum
+              ac arcu sit amet, fermentum pellentesque et purus. Integer maximus
+              varius lorem, sed convallis diam accumsan sed. Etiam porttitor
+              placerat sapien, sed eleifend a enim pulvinar faucibus semper quis
+              ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer
+              eget purus nec nulla mattis et accumsan ut magna libero. Morbi
+              auctor iaculis porttitor. Sed ut magna ac risus et hendrerit
+              scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras
+              eu ornare dui curabitur lacinia.
+            </p>
             <footer className="major">
               <ul className="actions">
                 <li>
@@ -104,9 +172,9 @@ class Index extends React.Component {
             </footer>
           </section>
 
-          <section id="second" className="main special">
+          <section id="projects" className="main special">
             <header className="major">
-              <h2>Ipsum consequat</h2>
+              <h2>Personal Projects</h2>
               <p>
                 Donec imperdiet consequat consequat. Suspendisse feugiat congue
                 <br />
@@ -158,9 +226,9 @@ class Index extends React.Component {
             </footer>
           </section>
 
-          <section id="cta" className="main special">
+          <section id="contact" className="main special">
             <header className="major">
-              <h2>Congue imperdiet</h2>
+              <h2>Contact Me</h2>
               <p>
                 Donec imperdiet consequat consequat. Suspendisse feugiat congue
                 <br />
