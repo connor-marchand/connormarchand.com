@@ -151,37 +151,21 @@ class Index extends React.Component {
             <header className="major">
               <h2>Experience</h2>
             </header>
+            <h2>DST Systems - Technical Intern: June 2018-Present</h2>
             <p className="content">
-              Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl
-              eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum
-              ac arcu sit amet, fermentum pellentesque et purus. Integer maximus
-              varius lorem, sed convallis diam accumsan sed. Etiam porttitor
-              placerat sapien, sed eleifend a enim pulvinar faucibus semper quis
-              ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer
-              eget purus nec nulla mattis et accumsan ut magna libero. Morbi
-              auctor iaculis porttitor. Sed ut magna ac risus et hendrerit
-              scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras
-              eu ornare dui curabitur lacinia.
-            </p>
-            <footer className="major">
-              <ul className="actions">
-                <li>
-                  <Link to="/generic" className="button">
-                    Learn More
-                  </Link>
-                </li>
+              <ul>
+                <li>Java and Javascript development</li>
+                <li>Ensure proper functionality and security of programs</li>
+                <li>Meet with development teams communicating about what needs to be completed before the release of the program</li>
+                <li>Worked closely with architecture assisting with migration of our product to AWS and reconfiguring our development pipeline and overall architecture</li>
+                <li>Test Driven Development</li>
               </ul>
-            </footer>
+            </p>
           </section>
 
           <section id="projects" className="main special">
             <header className="major">
               <h2>Personal Projects</h2>
-              <p>
-                Donec imperdiet consequat consequat. Suspendisse feugiat congue
-                <br />
-                posuere. Nulla massa urna, fermentum eget quam aliquet.
-              </p>
             </header>
             <ul className="statistics">
               <li className="style1">
@@ -200,10 +184,6 @@ class Index extends React.Component {
                 <span className="icon fa-laptop"></span>
                 <strong>4,096</strong> Aliquam
               </li>
-              <li className="style5">
-                <span className="icon fa-diamond"></span>
-                <strong>1,024</strong> Nullam
-              </li>
             </ul>
             <p className="content">
               Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl
@@ -220,7 +200,7 @@ class Index extends React.Component {
             <footer className="major">
               <ul className="actions">
                 <li>
-                  <Link to="/generic" className="button">
+                  <Link to="https://github.com/connor-marchand" target="_blank" className="button">
                     Learn More
                   </Link>
                 </li>
@@ -232,25 +212,11 @@ class Index extends React.Component {
             <header className="major">
               <h2>Contact Me</h2>
               <p>
-                Donec imperdiet consequat consequat. Suspendisse feugiat congue
+                I'd love to talk to you! You can email me, contact me on LinkedIn,
                 <br />
-                posuere. Nulla massa urna, fermentum eget quam aliquet.
+                or you can take a look at my Github if you would like.
               </p>
             </header>
-            <footer className="major">
-              <ul className="actions">
-                <li>
-                  <Link to="/generic" className="button special">
-                    Get Started
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/generic" className="button">
-                    Learn More
-                  </Link>
-                </li>
-              </ul>
-            </footer>
           </section>
         </div>
       </Layout>
