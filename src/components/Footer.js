@@ -51,7 +51,7 @@ const Footer = props => (
       </ul>
     </section>
     <p className="copyright">
-      &copy; 2020 Connor Marchand. Design: <a href="https://html5up.net">HTML5 UP</a>. Icons: <a href="https://www.flaticon.com/authors/freepik">Freepik</a>.
+      &copy; 2020 Connor Marchand. Design: <a href="https://html5up.net">HTML5 UP</a>. Icons: <a href="https://www.flaticon.com/authors/freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/pixel-perfect">Pixel Perfect</a> .
     </p>
   </footer>
 )

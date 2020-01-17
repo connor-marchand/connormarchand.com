@@ -7,6 +7,8 @@ import ship from '../assets/images/ship.png'
 import java from '../assets/images/java.png'
 import feather from '../assets/images/feather.png'
 import cloud from '../assets/images/network.png'
+import coding from '../assets/images/coding.png'
+import git from '../assets/images/git.png'
 import Header from '../components/Header'
 import Layout from '../components/layout'
 import Nav from '../components/Nav'
@@ -31,7 +33,7 @@ class Index extends React.Component {
         <ul className="features">
           <li><span className="image"> <img src={java} alt="java" height="120px"/> </span>
           <h3>Java</h3>
-          <p>Experienced in java development and using java to build applications</p>
+          <p>Proficient in java development and using java to build applications</p>
           </li>
           <li><span className="image"> <img src={cloud} alt="cloud" height="120px"/> </span>
           <h3>Cloud Computing</h3>
@@ -39,7 +41,7 @@ class Index extends React.Component {
           </li>
           <li><span className="image"> <img src={ship} alt="ship" height="120px" /></span>
           <h3>Containers</h3>
-          <p>Proficient with container services such as Docker and building scalable applications.</p>
+          <p>Experienced with container services such as Docker and building scalable applications.</p>
           </li>
         </ul>
       </div>,
@@ -47,15 +49,15 @@ class Index extends React.Component {
         <ul className="features">
           <li><span className="image"> <img src={feather} alt="pom" height="120px"/> </span>
           <h3>Project Management</h3>
-          <p>Experienced in project management tools such as Apache Maven.</p>
+          <p>Proficient in project management tools such as Apache Maven.</p>
           </li>
-          <li><span className="image"> <img src={feather} alt="java" height="120px"/> </span>
+          <li><span className="image"> <img src={git} alt="git" height="120px"/> </span>
           <h3>Git</h3>
-          <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat onsequat tempus veroeros sed consequat.</p>
+          <p>Proficient in version control languages such as Git.</p>
           </li>
-          <li><span className="image"> <img src={feather} alt="java" height="120px"/> </span>
-          <h3>--</h3>
-          <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat onsequat tempus veroeros sed consequat.</p>
+          <li><span className="image"> <img src={coding} alt="coding" height="120px"/> </span>
+          <h3>Other Languages</h3>
+          <p>Experienced in other languages such as Python, C++, JavaScript, and SQL.</p>
           </li>
         </ul>
       </div>
