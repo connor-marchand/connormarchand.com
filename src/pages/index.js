@@ -75,10 +75,6 @@ class Index extends React.Component {
     return this.items.slice(0, MAX_ITEMS);
   }
 
-
-
-
-
   _handleWaypointEnter = () => {
     this.setState(() => ({ stickyNav: false }))
   }
@@ -140,9 +136,9 @@ class Index extends React.Component {
               {this.getRenderedItems().map((item, id) => (
                 <div key={id}>{item}</div>
               ))}
-              <Link onClick={this.toggle} className="button">
+              <a onClick={this.toggle} className="button">
                 {this.state.isOpen ? 'Show Less' : 'Show More'}
-              </Link>
+              </a>
             </div>
           </section>
 
