@@ -19,6 +19,12 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "connormarchand.com",
+      },
+    },
   ],
 }

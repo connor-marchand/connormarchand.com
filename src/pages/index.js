@@ -112,13 +112,13 @@ class Index extends React.Component {
                   I will graduate from <a href="https://www.rockhurst.edu/" target="_blank"> Rockhurst University</a> in May of 2020.
 
                 </p>
-                <ul className="actions">
-                  <li>
-                    <Link to="/generic" className="button">
-                      Learn More
-                    </Link>
-                  </li>
-                </ul>
+                {/*<ul className="actions">*/}
+                {/*  <li>*/}
+                {/*    <Link to="/generic" className="button">*/}
+                {/*      Learn More*/}
+                {/*    </Link>*/}
+                {/*  </li>*/}
+                {/*</ul>*/}
               </div>
               <span className="image">
                 <img src={me} alt="me" />
@@ -159,50 +159,50 @@ class Index extends React.Component {
             </p>
           </section>
 
-          <section id="projects" className="main special">
-            <header className="major">
-              <h2>Personal Projects</h2>
-            </header>
-            <ul className="statistics">
-              <li className="style1">
-                <span className="icon fa-code-fork"></span>
-                <strong>5,120</strong> Etiam
-              </li>
-              <li className="style2">
-                <span className="icon fa-folder-open-o"></span>
-                <strong>8,192</strong> Magna
-              </li>
-              <li className="style3">
-                <span className="icon fa-signal"></span>
-                <strong>2,048</strong> Tempus
-              </li>
-              <li className="style4">
-                <span className="icon fa-laptop"></span>
-                <strong>4,096</strong> Aliquam
-              </li>
-            </ul>
-            <p className="content">
-              Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl
-              eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum
-              ac arcu sit amet, fermentum pellentesque et purus. Integer maximus
-              varius lorem, sed convallis diam accumsan sed. Etiam porttitor
-              placerat sapien, sed eleifend a enim pulvinar faucibus semper quis
-              ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer
-              eget purus nec nulla mattis et accumsan ut magna libero. Morbi
-              auctor iaculis porttitor. Sed ut magna ac risus et hendrerit
-              scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras
-              eu ornare dui curabitur lacinia.
-            </p>
-            <footer className="major">
-              <ul className="actions">
-                <li>
-                  <Link to="https://github.com/connor-marchand" target="_blank" className="button">
-                    Learn More
-                  </Link>
-                </li>
-              </ul>
-            </footer>
-          </section>
+          {/*<section id="projects" className="main special">*/}
+          {/*  <header className="major">*/}
+          {/*    <h2>Personal Projects</h2>*/}
+          {/*  </header>*/}
+          {/*  <ul className="statistics">*/}
+          {/*    <li className="style1">*/}
+          {/*      <span className="icon fa-code-fork"></span>*/}
+          {/*      <strong>5,120</strong> Etiam*/}
+          {/*    </li>*/}
+          {/*    <li className="style2">*/}
+          {/*      <span className="icon fa-folder-open-o"></span>*/}
+          {/*      <strong>8,192</strong> Magna*/}
+          {/*    </li>*/}
+          {/*    <li className="style3">*/}
+          {/*      <span className="icon fa-signal"></span>*/}
+          {/*      <strong>2,048</strong> Tempus*/}
+          {/*    </li>*/}
+          {/*    <li className="style4">*/}
+          {/*      <span className="icon fa-laptop"></span>*/}
+          {/*      <strong>4,096</strong> Aliquam*/}
+          {/*    </li>*/}
+          {/*  </ul>*/}
+          {/*  <p className="content">*/}
+          {/*    Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl*/}
+          {/*    eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum*/}
+          {/*    ac arcu sit amet, fermentum pellentesque et purus. Integer maximus*/}
+          {/*    varius lorem, sed convallis diam accumsan sed. Etiam porttitor*/}
+          {/*    placerat sapien, sed eleifend a enim pulvinar faucibus semper quis*/}
+          {/*    ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer*/}
+          {/*    eget purus nec nulla mattis et accumsan ut magna libero. Morbi*/}
+          {/*    auctor iaculis porttitor. Sed ut magna ac risus et hendrerit*/}
+          {/*    scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras*/}
+          {/*    eu ornare dui curabitur lacinia.*/}
+          {/*  </p>*/}
+          {/*  <footer className="major">*/}
+          {/*    <ul className="actions">*/}
+          {/*      <li>*/}
+          {/*        <Link to="https://github.com/connor-marchand" target="_blank" className="button">*/}
+          {/*          Learn More*/}
+          {/*        </Link>*/}
+          {/*      </li>*/}
+          {/*    </ul>*/}
+          {/*  </footer>*/}
+          {/*</section>*/}
 
           <section id="contact" className="main special">
             <header className="major">
